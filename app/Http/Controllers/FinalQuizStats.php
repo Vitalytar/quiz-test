@@ -43,7 +43,7 @@ class FinalQuizStats extends Controller
     /**
      * @return int
      */
-    protected function getNumberOfCorrectAnswers()
+    protected function getNumberOfCorrectAnswers(): int
     {
         $allSessionQuestions = session()->get('user-quiz-data');
         $answersCounter = 0;

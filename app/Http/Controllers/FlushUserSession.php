@@ -11,12 +11,11 @@ use App\Http\Controllers\Controller;
  */
 class FlushUserSession extends Controller
 {
-    public function execute()
+    /**
+     * @return void
+     */
+    public function execute(): void
     {
         session()->invalidate();
-
-        return response()->json(
-            ['success' => 'Flushed session']
-        );
     }
 }
